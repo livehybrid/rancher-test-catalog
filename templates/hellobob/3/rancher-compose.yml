@@ -1,0 +1,19 @@
+.catalog:
+  name: "NHS Digital - CIS - Bob"
+  version: "1"
+  description: |
+    Enter Description Here
+  minimum_rancher_version: "v1.1.4"
+  questions:
+    - variable: "img_version"
+      description: "Which version of the nginx container do you want to deploy?"
+      label: "Version"
+      required: true
+      default: latest
+      type: "string"
+
+hello-world-1:
+  scale: 1
+
+hello-world-2:
+  scale: 1

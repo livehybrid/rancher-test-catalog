@@ -1,0 +1,15 @@
+hello-world-1:
+  restart: always
+  expose:
+  - 9090:80
+  labels:
+    environment_name: lh
+    service_name: nginx
+    io.rancher.container.dns: true
+    project.service.name: nginx
+    project.name: cis
+    project.stack: hello-world
+  tty: true
+  image: nginx:${img_version}
+  stdin_open: true
+
